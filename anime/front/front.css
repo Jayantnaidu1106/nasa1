@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(front.jpg);
+    background-size: cover;
+}
+
+.fish{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url(fish_1.png);
+    background-size: cover;
+    top: 35vh;
+    left: 35%;
+}
+
+.chat-box {
+    width: fit-content;
+    max-width: 70%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 15px;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f1f1f1;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    left: 45%;
+    top: 40vh;
+}
+
+/* Tail for the chat bubble (left side) */
+.chat-box::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    width: 0;   
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #f1f1f1;
+}
+
+.chat-box .chat-text {
+    margin: 0;
+}
